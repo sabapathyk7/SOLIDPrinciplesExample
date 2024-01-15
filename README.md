@@ -28,15 +28,6 @@ Clone and set up the project locally:
       git clone https://github.com/sabapathyk7/SOLIDPrinciplesExample.git
       cd SOLIDPrinciplesExample
 
-# Usage
-
-Explore and use the project with code snippets and examples:
-
-    ```bash
-    // Example code snippets
-    let productService = ProductServiceRepositoryImpl()
-    try await productService.fetchProducts()
-    // ...
 
 # Dependencies
 
