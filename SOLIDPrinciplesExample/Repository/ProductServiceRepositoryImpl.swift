@@ -16,7 +16,7 @@ final class ProductServiceRepositoryImpl: ProductServiceRepository {
     }
 
     func fetchProducts() async throws -> Products {
-        let queryParams: StringArr = ["limit": "100"]
+        let queryParams: StringArr = Constants.queryParamFetch
         let productData = try await networkService.sendRequest(endpoint:
                                       ProductEndPoint.productFetch(
                                         queryParams: queryParams)) as ProductData
@@ -36,8 +36,8 @@ final class ProductServiceRepositoryImpl: ProductServiceRepository {
     }
 
     func updateProducts(id: String, productTitle: String) async throws -> Product {
-        let pathParams: StringArr = ["id": id]
-        let requestBody: StringArr = ["title": productTitle]
+        let pathParams: StringArr = [Constants.productID: id]
+        let requestBody: StringArr = [Constants.productTitle: productTitle]
         let product = try await networkService.sendRequest(endpoint:
                                       ProductEndPoint.productUpdate(
                                         pathParams: pathParams,
@@ -46,7 +46,7 @@ final class ProductServiceRepositoryImpl: ProductServiceRepository {
     }
 
     func deleteProducts(id: String) async throws -> Product {
-        let pathParams: StringArr = ["id": id]
+        let pathParams: StringArr = [Constants.productID: id]
         let product = try await networkService.sendRequest(endpoint:
                                          ProductEndPoint.productDelete(
                                             pathParams: pathParams)) as Product

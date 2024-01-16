@@ -13,11 +13,14 @@ extension Collection {
 }
 
 enum Constants {
-    static let products = "Products"
-    static let description = "Description"
-    static let showLess = "Show Less  -"
-    static let showMore = "Show More  +"
-    static let addIcon = "plus"
-    static let editIcon = "pencil"
-    static let deleteIcon = "xmark"
+    static let products         = "Products"
+    static let description      = "Description"
+    static let showLess         = "Show Less  -"
+    static let showMore         = "Show More  +"
+    static let addIcon          = "plus"
+    static let editIcon         = "pencil"
+    static let deleteIcon       = "xmark"
+    static let queryParamFetch  = ["limit": "100"]
+    static let productID        = "id"
+    static let productTitle     = "title"
 }

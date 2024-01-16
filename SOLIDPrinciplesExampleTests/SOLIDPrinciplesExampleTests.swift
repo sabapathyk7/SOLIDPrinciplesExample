@@ -15,7 +15,7 @@ final class SOLIDPrinciplesExampleTests: XCTestCase {
 
     @MainActor override func setUpWithError() throws {
         try super.setUpWithError()
-        sut = ProductViewModel(dependencies: AppDependencies(networkService: MockServiceable()))
+        sut = ProductViewModel(productService: ProductServiceRepositoryImpl(networkService: MockServiceable()))
     }
     override func tearDownWithError() throws {
         sut = nil

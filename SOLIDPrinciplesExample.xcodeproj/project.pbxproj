@@ -22,7 +22,6 @@
 		A25389672B53F32000F23187 /* SOLIDPrinciplesExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25389662B53F32000F23187 /* SOLIDPrinciplesExampleTests.swift */; };
 		A253896E2B54048800F23187 /* ProductServiceRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A253896D2B54048800F23187 /* ProductServiceRepositoryImpl.swift */; };
 		A291FF7A2B52B91E00DE6484 /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = A291FF792B52B91E00DE6484 /* NetworkKit */; };
-		A291FF7C2B53E44700DE6484 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A291FF7B2B53E44700DE6484 /* AppDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		A25389642B53F32000F23187 /* SOLIDPrinciplesExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOLIDPrinciplesExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25389662B53F32000F23187 /* SOLIDPrinciplesExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOLIDPrinciplesExampleTests.swift; sourceTree = "<group>"; };
 		A253896D2B54048800F23187 /* ProductServiceRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceRepositoryImpl.swift; sourceTree = "<group>"; };
-		A291FF7B2B53E44700DE6484 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +98,6 @@
 				A21ABEEB2B527C5700ECDAAE /* Views */,
 				A2B1E0562B53E90300D9E3DE /* Network */,
 				A2B1E0552B53E8F700D9E3DE /* Repository */,
-				A291FF7D2B53E47E00DE6484 /* Dependencies */,
 				A21ABEED2B527C6300ECDAAE /* ViewModel */,
 				A21ABEF72B529C8F00ECDAAE /* Extensions */,
 				A21ABEE02B527C4000ECDAAE /* Assets.xcassets */,
@@ -166,14 +163,6 @@
 				A25389662B53F32000F23187 /* SOLIDPrinciplesExampleTests.swift */,
 			);
 			path = SOLIDPrinciplesExampleTests;
-			sourceTree = "<group>";
-		};
-		A291FF7D2B53E47E00DE6484 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				A291FF7B2B53E44700DE6484 /* AppDependencies.swift */,
-			);
-			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		A2B1E0552B53E8F700D9E3DE /* Repository */ = {
@@ -322,7 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A291FF7C2B53E44700DE6484 /* AppDependencies.swift in Sources */,
 				A253896E2B54048800F23187 /* ProductServiceRepositoryImpl.swift in Sources */,
 				A21ABEFE2B529EB100ECDAAE /* ProductListView.swift in Sources */,
 				A21ABEDF2B527C3E00ECDAAE /* ContentView.swift in Sources */,
