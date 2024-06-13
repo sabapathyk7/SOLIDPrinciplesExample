@@ -12,12 +12,15 @@ import NetworkKit
 final class ProductViewModel: ObservableObject {
     @Published var products: Products = Products()
     @Published var error: NetworkError?
+
     var errorMessage: String {
         error?.customMessage ?? ""
     }
+
     private var productService: ProductServiceRepository
     init(productService: ProductServiceRepository = ProductServiceRepositoryImpl()) {
         self.productService = productService
+
         Task {
            await fetchProducts()
         }
@@ -33,7 +36,8 @@ extension ProductViewModel {
             self.error = error as? NetworkError
         }
     }
-    func addProduct() async {
+
+    private func addProduct() async {
         do {
             let product = try await productService.addProduct()
             print(product.title)
@@ -41,7 +45,8 @@ extension ProductViewModel {
             self.error = error as? NetworkError
         }
     }
-    func updateProducts(id: String, productTitle: String) async {
+
+    private func updateProducts(id: String, productTitle: String) async {
         do {
             let product = try await productService.updateProducts(id: id, productTitle: productTitle)
             print(product.title)
@@ -50,7 +55,7 @@ extension ProductViewModel {
         }
     }
 
-    func deleteProducts(id: String) async {
+    private func deleteProducts(id: String) async {
         do {
             let product = try await productService.deleteProducts(id: id)
             print(product.title)
@@ -58,6 +63,7 @@ extension ProductViewModel {
             self.error = error as? NetworkError
         }
     }
+
     func handleAction(_ action: Action?, product: Product) {
         guard let action = action else { return }
         switch action {

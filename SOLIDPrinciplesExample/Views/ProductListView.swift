@@ -19,6 +19,7 @@ struct ProductListView: View {
     @State private var showErrorAlert = false
 
     var body: some View {
+
         NavigationStack {
             Text(Constants.products).font(.title3).bold()
             Divider()

@@ -31,8 +31,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "176">
+                  endingLineNumber = "43">
                </Location>
                <Location
                   uuid = "007D7FCD-2BB4-4B1D-BB57-675917C3FEA9 - b4877c3c7bdd64e3"
@@ -46,8 +45,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "312">
+                  endingLineNumber = "43">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -79,8 +77,7 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "420">
+                  endingLineNumber = "45">
                </Location>
                <Location
                   uuid = "534EFBF9-0EC0-46BA-AF91-818E5D793BBF - 4b85697cc7840b3a"
@@ -94,10 +91,25 @@
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "88">
+                  endingLineNumber = "45">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D60ADAE1-5C95-4A67-AFC3-CB806C262436"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOLIDPrinciplesExampleTests/SOLIDPrinciplesExampleTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "sendRequest(endpoint:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
